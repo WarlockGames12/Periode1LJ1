@@ -1,0 +1,48 @@
+list = ["Items", "Pingas", "Do not do it"]
+print(list)
+list.append("leuk")
+print(list)
+list.insert(1, "grappig")
+print(list)
+list.remove("Items")
+print(list)
+list.clear()
+print(list)
+hoeveelKeer = list.count("Items")
+print("Items komt ", hoeveelKeer, "keer voor in list")
+print("---------------------------------------------------------------------------------------------")
+lijstGetallen = [5, 44, 241, -93, 16]
+print(lijstGetallen)
+
+index = 5
+while(index < 4):
+    print(lijstGetallen[1:index])
+    if( lijstGetallen[ index ] == 44): 
+       print("De index is nu:", index)
+    index += 1
+
+resultaatLijst = lijstGetallen[ 1:-1 ]
+print( resultaatLijst )
+
+print("De index is nu", index, "en de waarde in lijstGetallen is dan: ", lijstGetallen[ 1:index ] ) 
+print("---------------------------------------------------------------------------------------------")
+
+# Tuple
+tupleA = ("Dit", "mag", "niet", "veranderen")
+print(tupleA)
+
+
+# Set:
+setA = {"Hallo", "hallo", "Hallo", "mijn", "naam", "is", "dirk"}
+print(setA)
+setA.add("Nog eens")
+print(setA)
+
+
+#Dictionary
+
+woordenboek = { "sleutel":True, "Hoi":"slecht" }
+print(woordenboek)
+print(woordenboek["Hoi"])
+
+print(woordenboek.keys())
